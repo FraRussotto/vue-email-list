@@ -7,7 +7,7 @@ createApp({
 
     return{
 
-      message: "",
+      mail: "",
       listMail: [],
       apiMail: "https://flynn.boolean.careers/exercises/api/random/mail",
     }
@@ -33,7 +33,7 @@ createApp({
   computed:{
     stampList(){
       if(this.listMail.length === 10){
-        return this.message = this.listMail.join(' - ')
+        return this.mail = this.listMail.join(' - ')
       }
     }
   }

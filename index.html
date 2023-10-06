@@ -10,7 +10,15 @@
 <body>
   
   <div id="app">
-    <div>{{stampList}}</div>
+
+    <div>
+      <ul v-show="listMail.length === 10">
+        <li v-for="email in listMail">
+          {{email}}
+        </li>
+      </ul>
+    </div>
+
   </div>
 
 
