@@ -22,7 +22,6 @@ createApp({
           this.listMail.push(email.data.response)
         })
       }
-      console.log(this.listMail);
     },
 
   },
@@ -33,8 +32,9 @@ createApp({
 
   computed:{
     stampList(){
-      if(this.listMail.length === 10) this.message = this.listMail.join('-')
-      console.log('ciao');
+      if(this.listMail.length === 10){
+        return this.message = this.listMail.join(' - ')
+      }
     }
   }
 }).mount("#app")
